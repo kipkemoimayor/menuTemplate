@@ -1,0 +1,82 @@
+<DOCTYPE html>
+<head>
+<title>Ijobs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+<link rel ="stylesheet" href="job.css">
+<style>
+
+
+</style>
+
+</head>
+<body>
+<div class="scrollmenu">
+<a href="home.html"> Ijobs</a>
+<a href="home.html"> HOME</a>
+<a href="#"> JOBS</a>
+<a href="#"> CV TEMPLATES</a>
+<a href="#"> BLOG</a>
+<a href="#"> CONTACT US</a>
+<a href="login.html"> LOGIN</a>
+</div>
+<div class="slideshow-container">
+<header>
+  <h2>WELCOME, HERE ARE THE LATEST JOBS AVAILABLE</h2>
+</header>
+
+<section>
+  <nav >
+     <ul class="menu">
+    <li><a href="#about" class="menu-btn">System-administrator</a></li>
+	<li><a href="#contact" class="menu-btn">ICT officer at gso cadets</a></li>
+    <li><a href="#misc" class="menu-btn">ICT officer at RBA</a></li>
+    <li><a href="#dev" class="menu-btn">Software developer</a></li>
+	
+  
+    </ul>
+  </nav>
+  
+  <article>
+  <div class="menu-content about"><h1>System-administrator at Kass Fm</h1>
+  <p> Kass international are looking or an experienced system admin</p>
+  <p>follow the link <a href="www.kassf.co.ke"> for more information</a></div>
+  <div class="menu-content contact"><h1>ICT officer at gso cadets</h1>
+  <p>The Kenya Defence Forces is pleased to announce to the general public the recruitment of General Service Officer (GSO) Cadets and Specialised Officers which is scheduled to take place in the months of August and September 2018.
+
+Bribery and other acts of corruption are against the law. All persons presenting themselves for recruitment purposes with fake/falsified documents or caught engaging in any corrupt activity shall be arrested and prosecuted. If you accept to be conned, you will lose your money or property and go to jail; it has happened to many citizens during last recruitment.
+
+Do not waste your money and risk imprisonment; NO ONE can influence the recruitment process. Report any suspicious conmen to the nearest police station or a military camp. KDF recruitment is absolutely FREE TO ALL.</p></div>
+  <div class="menu-content misc"><p>follow the link <a href="www.kassf.co.ke"> for more information</a></div>
+  <div class="menu-content dev">HOT JOBS</div>
+  </article>
+  </section>
+ 
+    
+  
+ <script>
+  var $content = $('.menu-content');
+
+function showContent(type) {
+  $content.hide().filter('.' + type).show();
+}
+
+$('.menu').on('click', '.menu-btn', function(e) {
+  showContent(e.currentTarget.hash.slice(1));
+  e.preventDefault();
+}); 
+
+// show 'about' content only on page load (if you want)
+showContent('');
+</script
+</div>
+
+
+<div class ="footer">
+<p>copyright@2018.Ijobs all rights reserved<p>
+</div>
+
+
+</body>
+</html>

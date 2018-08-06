@@ -1,0 +1,104 @@
+<DOCTYPE html>
+<head>
+<title>Ijobs</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel ="stylesheet" href="home.css">
+<style>
+
+</style>
+
+</head>
+<body>
+<div class="scrollmenu">
+<a href="home.html"> Ijobs</a>
+<a href="#"> HOME</a>
+<a href="jobs.html"> JOBS</a>
+<a href="#"> CV TEMPLATES</a>
+<a href="#"> BLOG</a>
+<a href="#"> CONTACT US</a>
+<a href="login.html"> LOGIN</a>
+</div>
+<div class="slideshow-container">
+<div class="mySlides fade">
+<img src="of3.png" style="width:100%">
+
+</div>
+<div class="mySlides fade">
+<img src="of2.jpg" style="width:100%">
+</div>
+
+
+
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span>  
+</div>
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+<div class="row">
+<div class="main">
+      <h2>Ijobs</h2>
+      <h5>who are we</h5>
+      <div><image src="conn.jpg" style="height:200px;width:100%;"></div>
+      <p><strong>we connect build and pass</p></strong>
+      <p>Founded in 2018 <strong>Ijobs</strong> seek to connect proffesionals and new gradutaes to their next dream job, We aim to accelerate the rate at which those searching their dream jobs land new ones in shorter period,we believe if you have the skills to do the job then you have every opportunity to land yourself that job you really  want and <strong>Ijobs</strong>
+	  is here just for you.</p>
+      <br>
+      <h2>Vision</h2>
+      <h5>Our main vision</h5>
+      <div><img src="bot.jpg" style="height:250px; width:100%;"></div>
+      <p>Technology</p>
+      <p>We aim at making every hiring company get to discover rich talents and skills deep within the community,THus becoming the number one platform to link youth job seekers to the best companies in Africa</p>
+  </div>
+  <div class="side">
+      <h2><strong>Services that we offer</h2></strong>
+      <h5>Coonecting new gradutaes to the best hiring companies in kenya:</h5>
+      <img src="grad.jpg" style="height:200px;">
+     <div class="pale">
+	 <p>Are you a graduate, seeking your dream job well you are the right place just keep checking in everyday</p>
+	 </div>
+      <h3>Do you want to learn C++ for free, well follow this link <a href="https://www.sololearn.com/Course/CPlusPlus/"> solo learn</a></h3>
+      <p>just keep visiting here everyday <br/>Sand you may land yourself your dream job
+	  we offer.</p>
+      <div class="templ"><image src="temp.jpg" style="height:60px;"><h6>Best cv templates</h6></div><br>
+      <div class="guidance"> <img src="sel.jpg" style="height:60px;"><h6>career guidance</h6>
+	  </div><br>
+      <div class="guid"><image src="cover.jpg" style="height:60px;"><h6>A guide on how to write a good cover letter<h6></div>
+  </div>
+  
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+<div class ="footer">
+<p>copyright@2018.Ijobs all rights reserved<p>
+</div>
+
+
+</body>
+</html>

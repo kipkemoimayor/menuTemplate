@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+</head>
+<body>
+  
+  <ul class="menu">
+    <li><a href="#about" class="menu-btn">About</a></li>
+    <li><a href="#contact" class="menu-btn">Contact</a></li>
+    <li><a href="#misc" class="menu-btn">Misc</a></li>
+  </ul>
+
+  <div class="menu-content about">About</div>
+  <div class="menu-content contact">Contact</div>
+  <div class="menu-content misc">Misc</div>
+  var $content = $('.menu-content');
+
+function showContent(type) {
+  $content.hide().filter('.' + type).show();
+}
+
+$('.menu').on('click', '.menu-btn', function(e) {
+  showContent(e.currentTarget.hash.slice(1));
+  e.preventDefault();
+}); 
+
+// show 'about' content only on page load (if you want)
+showContent('about');
+  
+</body>
+</html>
